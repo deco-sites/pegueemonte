@@ -26,19 +26,19 @@ export interface Nav {
 export default function Header({
   logo = {
     src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
+      "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/pegueemonte/95b6996a-ab81-437e-a24a-acedb9aa23ef/DALLE-2024-10-09-17.37.11---A-simple-and-elegant-logo-design-using-only-text-with-the-name-'Pegue--Monte-Daniela-Antunes'.-The-font-style-is-modern-and-sleek-with-the-words-'Pe.webp ",
     alt: "Logo",
   },
   navigation = {
     links: [
-      { label: "Home", url: "/" },
-      { label: "About us", url: "/" },
-      { label: "Princing", url: "/" },
-      { label: "Contact", url: "/" },
+      { label: "Início", url: "/" },
+      { label: "Decorações", url: "/" },
+      { label: "Sobre nós", url: "/" },
+      { label: "Contato", url: "/" },
     ],
     buttons: [
-      { id: "change-me-1", href: "/", text: "Change me", outline: false },
-      { id: "change-me-2", href: "/", text: "Change me", outline: true },
+      { id: "change-me-1", href: "/", text: "Entrar", outline: false },
+      { id: "change-me-2", href: "/", text: "Criar ", outline: true },
     ],
   },
 }: Nav) {

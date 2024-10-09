@@ -1,42 +1,71 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
-      },
-      {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-      },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx",
-        "arrows": true
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "Footer"
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Header.tsx",
+        "logo": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/pegueemonte/bb3e5ec4-f717-429b-b267-1d423feb7ac3/DALLE-2024-10-09-15.59.19---A-logo-design-for-a-party-decoration-business-called-'Pegue-e-Monte'-owned-by-Daniela-Antunes.-The-logo-should-reflect-creativity-and-celebration-inc.webp"
+        }
       }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Hero.tsx",
+        "title": "<p><img src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/pegueemonte/bb3e5ec4-f717-429b-b267-1d423feb7ac3/DALLE-2024-10-09-15.59.19---A-logo-design-for-a-party-decoration-business-called-'Pegue-e-Monte'-owned-by-Daniela-Antunes.-The-logo-should-reflect-creativity-and-celebration-inc.webp\"></p>",
+        "description": "Transforme sua festa em um momento inesquecível com nossas decorações personalizadas. Pegue, monte e surpreenda seus convidados!",
+        "placement": "right",
+        "cta": [
+          {
+            "href": "/servicos",
+            "text": "Nossos Serviços",
+            "outline": false
+          },
+          {
+            "href": "/contato",
+            "text": "Faça um Orçamento",
+            "outline": true
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/BlogPosts.tsx",
+        "description": " ",
+        "title": "Decoração Tardezinha",
+        "posts": [
+          {
+            "tags": [],
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/pegueemonte/35063f68-07f7-434d-a47e-9599e0b43aa4/WhatsApp-Image-2024-10-09-at-16.18.40.jpeg",
+            "title": "Tardezinha",
+            "excerpt": " Oferecemos uma decoração inspirada na famosa \"Tardezinha\", trazendo o clima perfeito de descontração e pôr do sol. Ideal para festas ao ar livre, essa decoração envolve cores quentes como laranja, coral e amarelo, além de luzes suaves que simulam o entardecer. A presença de flores tropicais, folhagens exuberantes e detalhes rústicos cria uma atmosfera acolhedora e convidativa. Perfeita para aniversários, celebrações entre amigos ou eventos empresariais."
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ImageWithParagraph.tsx",
+        "title": "Tardezinha",
+        "titlePlacement": "center",
+        "description": "Oferecemos uma decoração inspirada na famosa \"Tardezinha\", trazendo o clima perfeito de descontração e pôr do sol. Ideal para festas ao ar livre, essa decoração envolve cores quentes como laranja, coral e amarelo, além de luzes suaves que simulam o entardecer. A presença de flores tropicais, folhagens exuberantes e detalhes rústicos cria uma atmosfera acolhedora e convidativa. Perfeita para aniversários, celebrações entre amigos ou eventos empresariais.",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/pegueemonte/35063f68-07f7-434d-a47e-9599e0b43aa4/WhatsApp-Image-2024-10-09-at-16.18.40.jpeg",
+        "placement": "right",
+        "ctaPlacement": "left"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Faq.tsx"
     }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
+}
